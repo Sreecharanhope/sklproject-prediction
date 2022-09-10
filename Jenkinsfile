@@ -30,7 +30,7 @@ pipeline
           {
            steps
              {
-             kubernetesDeploy( Deploying to k8's)
+             ##kubernetesDeployment fo Docker Image( 'Deploying to k8's)
              }
          }
       }
