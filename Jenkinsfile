@@ -17,15 +17,21 @@ pipeline
              sh 'docker build -t skip.py .'
             }        
         }
-        stage('Test')
+     stage('Push Docker Image to Docker Hub')
         {
             steps
             {
-                sh 'py.test --junit-xml test-reports/results.xml sources/test_calc.py'
+           withDockerRegistry(********** 'dockerhub', url: 'https://hub.docker.com'){
+           sh 'docker push sklp.py'
             }
-                
-        }
-        
-    }
-} 
-
+         }
+      }
+      stage('Deploy to k8s')
+          {
+           steps
+             {
+             kubernetesDeploy( Deploying to k8's)
+             }
+         }
+      }
+}
