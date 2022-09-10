@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-             git '  '
+             git 'https://github.com/Sreecharanhope/sklproject-prediction.git'
             }
         }
       stage('Build Docker Image ')
@@ -28,4 +28,4 @@ pipeline
         
     }
 } 
-}
+
