@@ -41,7 +41,7 @@ pipeline
              {
               script
                 {
-             ##kubernetesDeployment fo Docker Image( 'Deploying to k8's)
+             ##kubernetesDeployment for Docker Image( 'Deploying to k8's)
              }
           }
        }
