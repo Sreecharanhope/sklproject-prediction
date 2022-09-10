@@ -14,7 +14,7 @@ pipeline
         {
          steps
             {
-             sh 'docker build -t skip.py .'
+             sh 'docker build -t sklp.py .'
             }        
         }
      stage('Push Docker Image to Docker Hub')
