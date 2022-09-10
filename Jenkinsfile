@@ -21,8 +21,8 @@ pipeline
         {
             steps
             {
-           withDockerRegistry(********** 'dockerhub', url: 'https://hub.docker.com'){
-           sh 'docker push sklp.py'
+           withDockerRegistry(credentialsId: 'dockerhub', url: ' https://hub.docker.com ') {
+            sh 'docker push skl.py'
             }
          }
       }
